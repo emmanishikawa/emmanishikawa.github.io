@@ -5,19 +5,19 @@ export default [
         artist: "&TEAM",
     },
     {
-        title: "Hard to say",
-        song_url: "/emmanishikawa/audio/hardtosay.mp3",
-        artist: "Karencici",
+        title: "SHOUT OUT",
+        song_url: "/emmanishikawa/audio/shoutout.mp3",
+        artist: "ENHYPEN",
     },
     {
         title: "HANA",
         song_url: "/emmanishikawa/audio/hana.mp3",
         artist: "ZEROBASEONE",
     },
-     {
-        title: "SHOUT OUT",
-        song_url: "/emmanishikawa/audio/shoutout.mp3",
-        artist: "ENHYPEN",
+    {
+        title: "Hard to say",
+        song_url: "/emmanishikawa/audio/hardtosay.mp3",
+        artist: "Karencici",
     },
      {
         title: "jellyfish",

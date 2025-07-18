@@ -30,15 +30,15 @@ export default function MusicPlayer() {
 
     return (
         <>
-        <div className='hidden lg:flex items-center justify-center h-14 w-56 p-5  bg-blue-100 rounded-3xl'>
-            <div className="flex flex-row">
+        <div className='hidden lg:flex fixed left-5 bottom-5 items-center justify-center h-16 w-60 p-5  bg-accent rounded-3xl border-[1.5px] border-blue-border'>
+            <div className="flex flex-row ml-1 ">
                 <div className="flex flex-col">
-                    <div className="max-h-5 w-32 pr-2 text-[16px] overflow-hidden font-[kodomo]">{songs[count].title}</div>
-                    <div className="text-[10px]">{songs[count].artist}</div>
+                    <div className="max-h-5 w-32 px-2 text-[16px] overflow-hidden font-[kodomo] text-white">{songs[count].title}</div>
+                    <div className="text-[10px] px-2 text-mygray-500">{songs[count].artist}</div>
                 </div>
-                <div className="flex flex-row">
-                    <button onClick={handlePlay}><img src={play ? pauseIcon : playIcon}/></button>
-                    <button onClick={()=>{
+                <div className="flex flex-row items-center justify-center">
+                    <button className="flex h-10 w-10 mr-1 items-center justify-center bg-main rounded-2xl border-[1.5px] border-blue-border" onClick={handlePlay}><img src={play ? pauseIcon : playIcon}/></button>
+                    <button className="flex h-10 w-10 mr-1 items-center justify-center bg-main rounded-2xl border-[1.5px] border-blue-border" onClick={()=>{
                         setCount(prevCount => (prevCount + 1) % 5);
                         if(play) {handlePlay()};
                     }}><img src={skipIcon}/></button>
