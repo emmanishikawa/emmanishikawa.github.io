@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+@import "tailwindcss";
+
+@theme{
+    --color-main: #18181B;
+    --color-accent: #141417;
+    --color-cursor: #2b2b30;
+    --color-blue-border: #222225;
+    --link-underline-color: #8B8A8B;
+
+    --color-mygray-500: #979797;
+    --accent-mygray-300: #E8E8E8;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'kodomo';
+  src: url('/emmanishikawa/fonts/kodomo.otf') format('opentype');
+}
+@font-face {
+  font-family: 'nunito';
+  src: url('/emmanishikawa/fonts/nunito.ttf') format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+    background-color: var(--color-main);
+    font-family: 'nunito';
 }
