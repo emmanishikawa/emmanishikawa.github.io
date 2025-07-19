@@ -37,8 +37,8 @@ export default function MusicPlayer() {
                     <div className="text-[12px] px-2 text-mygray-500">{songs[count].artist}</div>
                 </div>
                 <div className="flex flex-row items-center justify-center">
-                    <button className="flex h-10 w-10 mr-1 items-center justify-center bg-main rounded-2xl border-[1.5px] border-blue-border" onClick={handlePlay}><img src={play ? pauseIcon : playIcon}/></button>
-                    <button className="flex h-10 w-10 mr-1 items-center justify-center bg-main rounded-2xl border-[1.5px] border-blue-border" onClick={()=>{
+                    <button className="flex h-10 w-10 mr-1 items-center justify-center bg-main rounded-2xl border-[1.5px] border-blue-border cursor-pointer" onClick={handlePlay}><img src={play ? pauseIcon : playIcon}/></button>
+                    <button className="flex h-10 w-10 mr-1 items-center justify-center bg-main rounded-2xl border-[1.5px] border-blue-border cursor-pointer" onClick={()=>{
                         setCount(prevCount => (prevCount + 1) % 5);
                         if(play) {handlePlay()};
                     }}><img src={skipIcon}/></button>
