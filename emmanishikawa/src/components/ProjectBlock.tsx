@@ -14,13 +14,13 @@ export default function ProjectBlock({index}: ProjectBlockProps){
             <div className="flex-grow h-10 flex justify-center items-center text-white bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer">
                 {projects[index].project_title}
             </div>
-            <button className="flex w-10 h-10 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
+            <button className="flex w-10 h-10 p-2 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
                 onClick={() => {
                                 window.open(projects[index].github_url, '_blank');
                                 }}>
                 <img src={github_svg}/>
             </button>
-            <button className="flex w-10 h-10 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
+            <button className="flex w-10 h-10 p-2 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
                 onClick={() => {
                                 window.open(projects[index].link_url, '_blank');
                                 }}>
