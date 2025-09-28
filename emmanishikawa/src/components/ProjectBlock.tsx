@@ -23,7 +23,7 @@ export default function ProjectBlock({index}: ProjectBlockProps){
                 <img src={link_svg}/>
             </button>
             </div>
-            <div className="flex flex-col relative w-full h-40 mt-2 p-5 bg-main rounded-xl border-[1.5px] border-blue-border">
+            <div className="flex flex-col relative w-full h-28 mt-2 p-5 bg-main rounded-xl border-[1.5px] border-blue-border">
                 <div>{projects[index].description}</div>
                 <div className="absolute bottom-0 mb-2 text-[12px]">{projects[index].tools}</div>
             </div>
