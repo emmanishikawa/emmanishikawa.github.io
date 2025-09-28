@@ -5,11 +5,16 @@ import { Link } from "react-router-dom";
 
 
 export default function ProjectBlock({ index }: { index: number }){
+
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     return (
         <div className="flex flex-col w-full m-4 p-2 bg-accent rounded-2xl border-[1.5px] border-blue-border">
             <div className="flex w-full gap-2">
             
-            <Link
+            <Link onClick={handleScrollToTop}
                 to={`/project/${projects[index].slug}`}
                 className="flex-grow h-10 flex justify-center items-center text-white bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
                 >

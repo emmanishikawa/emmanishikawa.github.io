@@ -11,6 +11,7 @@ export default function NavBar(){
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       navigate("/");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
