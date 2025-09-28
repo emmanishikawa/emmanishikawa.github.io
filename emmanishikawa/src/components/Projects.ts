@@ -18,7 +18,7 @@ const projects: Project[] = [
     description: "a desktop photobooth website featuring customized film strips",
     tools: "React.js, Javascript, HTML/CSS",
     github_url: "https://github.com/emmanishikawa/lovefilm",
-    link_url: "https://lovefilm-six.vercel.app/",
+    link_url: "https://love-film.vercel.app/",
     case_study: {
       title: "love film",
       content: [{ type: "paragraph", text: "page in progress" }],
