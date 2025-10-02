@@ -10,9 +10,27 @@ export default function ProjectBlock({ index }: { index: number }){
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
+    let ghlink = true;
+    let plink = true;
+
+    if(projects[index].github_url == null || projects[index].github_url == ""){
+        ghlink = false;
+    }
+    if(projects[index].link_url == null || projects[index].link_url == ""){
+        plink = false;
+    }
+
+    const handleGHClick = () => {
+        if(ghlink) window.open(projects[index].github_url, '_blank');
+    }
+
+    const handlePClick = () => {
+        if(plink) window.open(projects[index].link_url, '_blank');
+    }
+
     return (
-        <div className="flex flex-col w-full m-4 p-2 bg-accent rounded-2xl border-[1.5px] border-blue-border">
-            <div className="flex w-full gap-2">
+        <div className="flex flex-col w-full p-2 bg-accent rounded-2xl border-[1.5px] border-blue-border">
+            <div className="flex w-full gap-2 ">
             
             <Link onClick={handleScrollToTop}
                 to={`/emmanishikawa/project/${projects[index].slug}`}
@@ -22,16 +40,12 @@ export default function ProjectBlock({ index }: { index: number }){
             </Link>
 
 
-            <button className="flex w-10 h-10 p-2 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
-                onClick={() => {
-                                window.open(projects[index].github_url, '_blank');
-                                }}>
+            <button className={`flex w-10 h-10 p-2 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border ${ghlink ? 'cursor-pointer' : 'cursor-not-allowed'}`}
+                onClick={handleGHClick}>
                 <img src={github_svg}/>
             </button>
-            <button className="flex w-10 h-10 p-2 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
-                onClick={() => {
-                                window.open(projects[index].link_url, '_blank');
-                                }}>
+            <button className={`flex w-10 h-10 p-2 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border ${plink ? 'cursor-pointer' : 'cursor-not-allowed'}`}
+                onClick={handlePClick}>
                 <img src={link_svg}/>
             </button>
             </div>

@@ -36,6 +36,18 @@ const projects: Project[] = [
       content: [{ type: "paragraph", text: "page in progress" }],
     },
   },
+  {
+    slug: "ota",
+    project_title: "out the archive",
+    description: "development of full-stack website",
+    tools: "React.js, Figma",
+    github_url: "",
+    link_url: "https://www.outthearchive.xyz/",
+    case_study: {
+      title: "out the archive",
+      content: [{ type: "paragraph", text: "page in progress" }],
+    },
+  },
 ];
 
 export default projects;
