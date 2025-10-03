@@ -33,7 +33,7 @@ export default function ProjectBlock({ index }: { index: number }){
             <div className="flex w-full gap-2 ">
             
             <Link onClick={handleScrollToTop}
-                to={`/emmanishikawa/project/${projects[index].slug}`}
+                to={`/project/${projects[index].slug}`}
                 className="flex-grow h-10 flex justify-center items-center text-white bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
                 >
                 {projects[index].project_title}

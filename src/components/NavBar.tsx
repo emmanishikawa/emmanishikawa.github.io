@@ -7,10 +7,10 @@ export default function NavBar(){
   const navigate = useNavigate();
 
   const handleScrollToTop = () => {
-    if (location.pathname === "/emmanishikawa/") {
+    if (location.pathname === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      navigate("/emmanishikawa/");
+      navigate("/");
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };

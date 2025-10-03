@@ -12,8 +12,8 @@ function App() {
       <Router>
       <NavBar />
       <Routes>
-        <Route path="/emmanishikawa" element={<Content />} />
-        <Route path="/emmanishikawa/project/:slug" element={<CaseStudy />} />
+        <Route path="/" element={<Content />} />
+        <Route path="/project/:slug" element={<CaseStudy />} />
       </Routes>
       <MusicPlayer />
     </Router>
