@@ -1,6 +1,7 @@
 import ParagraphBlock from "./ParagraphBlock";
 import ImageBlock from "./ImageBlock";
 import ListBlock from "./ListBlock";
+import SubheaderBlock from "./SubheaderBlock";
 
 interface Block {
   type: string;
@@ -13,6 +14,8 @@ interface Block {
 
 export default function BlockRenderer({ block }: { block: Block }) {
   switch (block.type) {
+    case "subheader":
+      return <SubheaderBlock text={block.text!} />;
     case "paragraph":
       return <ParagraphBlock text={block.text!} />;
     case "image":

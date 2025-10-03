@@ -7,7 +7,10 @@ export interface Project {
   link_url: string;
   case_study: {
     title: string;
-    content: any[];
+    timeline: string;
+    content_1?: any[];
+    content_2?: any[];
+    content_3?: any[]
   };
 }
 
@@ -21,7 +24,8 @@ const projects: Project[] = [
     link_url: "https://love-film.vercel.app/",
     case_study: {
       title: "love film",
-      content: [{ type: "paragraph", text: "page in progress. read github for more information" }],
+      timeline: "july - august 2025",
+      content_1: [{type: "subheader", text: "inspiration"}, { type: "paragraph", text: "page in progress. read github for more information" }],
     },
   },
   {
@@ -33,7 +37,8 @@ const projects: Project[] = [
     link_url: "https://emmanishikawa.github.io/emmanishikawa/",
     case_study: {
       title: "portfolio",
-      content: [{ type: "paragraph", text: "page in progress" }],
+      timeline: "june 2025 - present",
+      content_1: [{ type: "paragraph", text: "page in progress" }],
     },
   },
   {
@@ -45,7 +50,8 @@ const projects: Project[] = [
     link_url: "https://www.outthearchive.xyz/",
     case_study: {
       title: "out the archive",
-      content: [{ type: "paragraph", text: "page in progress. view finished website using link above!" }],
+      timeline: "march - may 2025",
+      content_1: [{ type: "paragraph", text: "page in progress. view finished website using link above!" }],
     },
   },
 ];

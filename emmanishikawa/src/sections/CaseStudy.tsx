@@ -30,6 +30,7 @@ export default function CaseStudy() {
         if(plink) window.open(project.link_url, '_blank');
     }
 
+
   return (
     <div className="flex h-screen w-screen justify-center ">
       <div className="flex flex-col relative w-screen h-full mx-8 lg:m-0 lg:w-3xl top-14 lg:top-25 ">     
@@ -48,9 +49,9 @@ export default function CaseStudy() {
       </button>
       </div>    
       </div>
+      <div className="text-mygray-500 text-[12px]">{project.case_study.timeline}</div>
   
-
-      {project.case_study.content.map((block, idx) => (
+      {project.case_study.content_1?.map((block, idx) => (
         <BlockRenderer key={idx} block={block} />
       ))}
       </div>
