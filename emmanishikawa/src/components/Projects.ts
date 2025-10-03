@@ -21,7 +21,7 @@ const projects: Project[] = [
     link_url: "https://love-film.vercel.app/",
     case_study: {
       title: "love film",
-      content: [{ type: "paragraph", text: "page in progress" }],
+      content: [{ type: "paragraph", text: "page in progress. read github for more information" }],
     },
   },
   {
@@ -45,7 +45,7 @@ const projects: Project[] = [
     link_url: "https://www.outthearchive.xyz/",
     case_study: {
       title: "out the archive",
-      content: [{ type: "paragraph", text: "page in progress" }],
+      content: [{ type: "paragraph", text: "page in progress. view finished website using link above!" }],
     },
   },
 ];
