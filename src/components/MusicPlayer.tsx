@@ -30,7 +30,7 @@ export default function MusicPlayer() {
 
     return (
         <>
-        <div className='hidden lg:flex fixed left-5 bottom-5 items-center justify-center h-16 w-60 p-5  bg-accent rounded-3xl border-[1.5px] border-blue-border'>
+        <div className='hidden lg:flex fixed left-5 bottom-5 items-center justify-center h-16 w-60 p-5  bg-accent rounded-3xl border-[1.5px] border-blue-border cursor-crosshair'>
             <div className="flex flex-row ml-1 ">
                 <div className="flex flex-col">
                     <div className="max-h-5 w-32 px-2 text-[16px] overflow-hidden font-[kodomo] text-white">{songs[count].title}</div>

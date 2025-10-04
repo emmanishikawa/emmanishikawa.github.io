@@ -21,6 +21,10 @@
   src: url('public/fonts/nunito.ttf') format('truetype');
 }
 
+html, #root{
+  cursor: crosshair;
+}
+
 body{
     background-color: var(--color-main);
     font-family: 'nunito';
