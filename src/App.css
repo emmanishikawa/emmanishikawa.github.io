@@ -14,11 +14,11 @@
 
 @font-face {
   font-family: 'kodomo';
-  src: url('/fonts/kodomo.otf') format('opentype');
+  src: url('public/fonts/kodomo.otf') format('opentype');
 }
 @font-face {
   font-family: 'nunito';
-  src: url('/fonts/nunito.ttf') format('truetype');
+  src: url('public/fonts/nunito.ttf') format('truetype');
 }
 
 body{

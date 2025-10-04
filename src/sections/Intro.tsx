@@ -3,7 +3,7 @@ export default function Intro(){
         <>
             <div className="flex flex-col w-full h-fit pb-10 text-mygray-500 text-[16px] font-[nunito] border-b-[1.5px] border-blue-border">
                 <h1 className="font-[kodomo] text-white text-3xl my-8">introduction</h1>
-                <p className="my-2">Hello! I am Emma Nishikawa, an undergraduate studying cognitive science with a specialization in machine learning and computer science at UC San Diego.</p>
+                <p className="my-2">Hello! I am Emma Nishikawa, an undergraduate studying <span className="text-white">cognitive science</span> with a specialization in machine learning, <span className="text-white">computer science</span>, and <span className="text-white">international studies</span> at UC San Diego.</p>
                 <p className="my-2">As an aspiring software developer and designer, I’m driven by a passion for transforming everyday challenges into impactful, real-world solutions. I’m always looking for opportunities to learn, collaborate, and contribute my perspective in meaningful ways!</p>
                 <p className="my-2">Outside of study and work, you will probably find me searching for the best matcha 🍀</p>
             </div>
