@@ -6,7 +6,7 @@ export default [
     },
     {
         title: "SHOUT OUT",
-        song_url: "/emmanishikawa/audio/shoutout.mp3",
+        song_url: "/audio/shoutout.mp3",
         artist: "ENHYPEN",
     },
     {
