@@ -26,11 +26,12 @@ const projects: Project[] = [
     github_url: "https://github.com/emmanishikawa/lovefilm",
     link_url: "https://love-film.vercel.app/",
     case_study: {
-      title: "love film (page still wip)",
+      title: "love film",
       timeline: "july - august 2025",
       summary: "love (愛) film is a work-in-progress personal project that lets users take personalized film-strip photos anywhere. Inspired by harufilm, a photobooth studio that uses custom emojis for decoration, I wanted to recreate that experience online, so anyone can capture and decorate cute memories with friends and family from home 📸",
       //images showcasing project
       content_1: [
+        {type: "subheader", text: "images coming soon!!"},
         {type: "subheader", text: "planning"},
         {type: "paragraph", text: "I began by researching both physical and digital photobooths, then broke down their features into four main components:"},
         {type: "list", items: ["Main Menu", "Frame Selection", "Decoration", "Download"]},
@@ -77,10 +78,37 @@ const projects: Project[] = [
     github_url: "https://github.com/emmanishikawa/emmanishikawa",
     link_url: "https://emmanishikawa.github.io/emmanishikawa/",
     case_study: {
-      title: "portfolio",
+      title: "portfolio (page still wip)",
       timeline: "june 2025 - present",
-      summary: "",
-      content_1: [{ type: "paragraph", text: "page in progress" }],
+      summary: "This is my personal portfolio website, built entirely by me using TypeScript. It showcases my experiences, projects, and the growth of my skills as a designer and developer 💡",
+      content_1: [
+        {type: "subheader", text: "images coming soon!!"},
+        {type: "subheader", text: "planning"},
+        {type: "paragraph", text: "My goal was to create a simple, personal site that reflects who I am without overwhelming visitors with visuals. I wanted the focus to stay on my work and abilities rather than flashy aesthetics, while still including a few playful, unique touches."},
+        {type: "paragraph", text: "One of those was a custom music player featuring some of my favorite songs. It adds a personal element and makes the site feel more alive and authentic."},
+        //image  
+      ],  
+      content_2: [
+        {type: "subheader", text: "programming"},
+        {type: "paragraph", text: "I started with the music player, since I’ve always enjoyed making music-related features. I created an array containing song titles, URLs, and artists, styled the player within a div, and added functions to handle play/pause and skip actions."},
+        //code snippet music player
+        {type: "paragraph", text: "The most challenging part of programming was structuring the projects section. I wanted each “file” (project) to have its own page, where I could share the story and process behind it. Initially, I considered creating a separate file for each project, but I later built a single dynamic page that renders text and images as reusable content blocks. This approach kept the project clean, organized, and easy to scale."},
+        //code snippet case study
+        ], 
+      content_3: [
+        {type: "subheader", text: "designing"},
+        {type: "paragraph", text: "For the visual direction, I spent a long time looking at others’ portfolio design. I took inspiration from portfolios like nitta.studio, gazijarin.com, and kazukinoda.com. I chose a dark color palette to make highlighted white text stand out, guiding the viewer’s focus toward key details."},
+        //inspo images
+        {type: "paragraph", text: "I’ve always loved handwritten fonts, so I chose ‘Kodomo Rounded’ for its playful and friendly tone, adding a touch of personality while keeping the site approachable."},
+        //font images
+        {type: "paragraph", text: "As for the favicon (my logo), I chose a simplified four-leaf clover design. It makes me feel lucky about where I am and what my future could be 🍀"},
+        //logo design process image
+        ],  
+      content_4: [
+        {type: "subheader", text: "conclusion & next steps"},
+        {type: "paragraph", text: "This website is a diary of my progress and projects. As my experience grows, so will this portfolio. Future plans include creating a custom mouse cursor and implementing more interactive elements and sections!"},
+        {type: "paragraph", text: "Thank you for reading :) the code is available on github!"},
+        ], 
     },
   },
   {
@@ -91,11 +119,11 @@ const projects: Project[] = [
     github_url: "",
     link_url: "https://www.outthearchive.xyz/",
     case_study: {
-      title: "out the archive",
+      title: "out the archive (page still wip)",
       timeline: "march - may 2025",
       summary: "",
       content_1: [
-        { type: "paragraph", text: "page in progress. view finished website using link above!" }
+        { type: "paragraph", text: "" }
       ],
     },
   },
