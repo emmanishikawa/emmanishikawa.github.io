@@ -34,9 +34,9 @@ export default function CaseStudy() {
 
   return (
     <>
-    <div className="flex w-screen justify-center ">
+    <div className="flex w-screen justify-center">
       <div className="flex flex-col relative w-screen mx-8 lg:m-0 lg:w-3xl top-14 lg:top-25 ">     
-      <div className="border-b-[1.5px] border-blue-border">
+      <div className="border-b-[1.5px] border-blue-border pb-2">
       <div className="flex flex-row gap-2">  
       <h1 className="font-[kodomo] text-white text-3xl my-8">
         {project.case_study.title}
@@ -52,9 +52,26 @@ export default function CaseStudy() {
       </button>
       </div>    
       </div>
-      <div className="text-mygray-500 text-[12px]">{project.case_study.timeline}</div>
+      <div className="text-mygray-500 text-[12px] mb-2">{project.case_study.timeline}</div>
   
+      <h2 className="my-2 text-[20px] font-bold text-white">summary</h2>
+
+      <div className="text-mygray-500 text-[16px] ">{project.case_study.summary}</div>
+  
+
       {project.case_study.content_1?.map((block, idx) => (
+        <BlockRenderer key={idx} block={block} />
+      ))}
+      {project.case_study.content_2?.map((block, idx) => (
+        <BlockRenderer key={idx} block={block} />
+      ))}
+      {project.case_study.content_3?.map((block, idx) => (
+        <BlockRenderer key={idx} block={block} />
+      ))}
+      {project.case_study.content_4?.map((block, idx) => (
+        <BlockRenderer key={idx} block={block} />
+      ))}
+      {project.case_study.content_5?.map((block, idx) => (
         <BlockRenderer key={idx} block={block} />
       ))}
       </div>
