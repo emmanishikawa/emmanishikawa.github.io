@@ -1,6 +1,6 @@
 import links from "./Links.ts";
 
-export default function NavButton(){
+export default function ContactButton(){
     return (
         <>
             <div className="flex flex-row">

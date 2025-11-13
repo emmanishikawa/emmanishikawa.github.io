@@ -6,7 +6,7 @@ export default function Content(){
     return (
         <>
             <div className="flex h-screen w-screen justify-center ">
-                <div className="flex flex-col relative w-screen h-auto mx-8 lg:m-0 lg:w-3xl top-14 lg:top-25 ">
+                <div className="flex flex-col relative w-screen h-auto mx-8 lg:m-0 lg:w-2xl top-14 lg:top-30 ">
                     <Intro/>
                     <Projects/>
                     <Footer/>

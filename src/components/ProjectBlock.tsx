@@ -32,12 +32,11 @@ export default function ProjectBlock({ index }: { index: number }){
         <div className="flex flex-col w-full p-2 bg-accent rounded-2xl border-[1.5px] border-blue-border">
             <div className="flex w-full gap-2 ">
             
-            <Link onClick={handleScrollToTop}
-                to={`/project/${projects[index].slug}`}
-                className="flex-grow h-10 flex justify-center items-center text-white bg-main rounded-xl border-[1.5px] border-blue-border cursor-pointer"
+            <div onClick={handleScrollToTop} 
+                className="flex-grow h-10 flex justify-center items-center text-white bg-main rounded-xl border-[1.5px] border-blue-border"
                 >
                 {projects[index].project_title}
-            </Link>
+            </div>
 
 
             <button className={`flex w-10 h-10 p-2 justify-center items-center bg-main rounded-xl border-[1.5px] border-blue-border ${ghlink ? 'cursor-pointer' : 'cursor-not-allowed'}`}
@@ -56,4 +55,6 @@ export default function ProjectBlock({ index }: { index: number }){
 
         </div>
     )
-}
+}{/*
+    this goes in the 'link'
+    to={`/project/${projects[index].slug}`}*/}

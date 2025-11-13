@@ -26,8 +26,8 @@ html, #root{
 }
 
 body{
-    background-color: var(--color-main);
-    font-family: 'nunito';
+  background-color: var(--color-main);
+  font-family: 'nunito';
 }
 
 ::selection{
@@ -35,5 +35,12 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
+}
+
+a{
+  color: white;
+}
+a:hover{
+  border-bottom: dotted 2.8px var(--link-underline-color);
 }
